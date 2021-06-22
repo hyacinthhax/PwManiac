@@ -63,10 +63,6 @@ def delete():
     listBox.delete(ANCHOR)
 
 
-def edit():
-    pass
-
-
 def search():
     pass
 
