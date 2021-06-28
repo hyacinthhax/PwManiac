@@ -56,6 +56,7 @@ def decryptFile():
     with open("{0}".format(fn), "rb") as cfile:
         plaintext, result, verify_result = gpg.Context().decrypt(cfile)
         decryptEntry.insert(0, plaintext)
+        logger.info("User Viewed/Decrypted %s" % (fn))
 
 
 def delete():
